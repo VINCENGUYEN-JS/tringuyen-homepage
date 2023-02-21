@@ -9,13 +9,11 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  SimpleGrid,
   Image
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
-import { GridItem } from '../components/grid-item'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
