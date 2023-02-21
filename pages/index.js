@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  SimpleGrid
+  SimpleGrid,
+  Image
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
@@ -17,8 +18,7 @@ import Paragraph from '../components/paragraph'
 import { GridItem } from '../components/grid-item'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoGithub, IoLogoYoutube, IoLogoLinkedin } from 'react-icons/io5'
-import thumbYoutube from '../public/images/pricefx-engineer-meetings.jpg'
+import { IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -31,16 +31,16 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello , I &apos;m a React developer based in VietNam!
+          Hello , I live in San Jose, California , United States
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Vince Nguyen
+              Tri Nguyen
             </Heading>
-            <p>Software Engineer / Designer</p>
+            <p>Associate Research Financial Analyst</p>
           </Box>
-          {/* <Box
+          <Box
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
@@ -55,30 +55,33 @@ const Page = () => {
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
-              src="/images/vincenguyen.jpg"
+              src="/images/tringuyen.jpeg"
               alt="Profile Image"
             />
-          </Box> */}
+          </Box>
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About me
           </Heading>
           <Paragraph>
-            As a front-end developer with more than 3 years of experience, my
-            job involves designing and implementing user interfaces for web and
-            mobile applications. I use a variety of technologies, including
-            HTML, CSS, and JavaScript, to create interactive, responsive, and
-            visually appealing designs that enhance the user experience. I work
-            closely with back-end developers and designers to ensure that the
-            final product is functional and meets the clients requirements. In
-            addition to coding, I also stay up-to-date on the latest design
-            trends and user experience best practices, and I am able to
-            communicate effectively with project managers, designers, and other
-            stakeholders to ensure that projects are delivered on time
+            Tri Nguyen is an associate research financial analyst with more than
+            1 year of experience working for a leading university. He holds a
+            Bachelor&apos; degree in Finance from a top-ranked business college.
+            Before joining the University of San Francisco, Tri worked as a
+            teller for more than 4 years at Citibank, where he gained experience
+            in personal financial management and banking regulations. During his
+            tenure at the University of San Francisco, Tri has gained extensive
+            experience in financial analysis, management, and planning. He has
+            worked on numerous research projects, providing financial oversight,
+            guidance, and training faculty and researchers to ensure that
+            project goals are achieved within budget constraints. Overall, Tri
+            is a highly skilled and experienced financial analyst who has made
+            significant contributions to the financial management of research
+            projects at the university.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <NextLink href="/">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
               </Button>
@@ -90,53 +93,55 @@ const Page = () => {
             Experience
           </Heading>
           <BioSection>
-            <BioYear>2018</BioYear>
-            Software Engineer (KMS Technology, Inc. · Full-time)
+            <BioYear>Nov 2021</BioYear>
+            Associate Research Financial Analyst (University of San Francisco)
           </BioSection>
           <BioSection>
-            <BioYear>2019 to present</BioYear>
-            Software Engineer (Pricefx, Inc. · Full-time)
+            <BioYear>Jun 2017 - Nov 2021</BioYear>
+            Bank Teller (Citi Bank , Part-time)
+          </BioSection>
+          <BioSection>
+            <BioYear>Apr 2016 - May 2017 </BioYear>
+            Salesperson (Fry&apos; Electronics , Part-time)
           </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            Education
           </Heading>
-          <Paragraph>Art, Music, Photography </Paragraph>
+          <BioSection>
+            <BioYear>2019 - 2021</BioYear>
+            Finance (San Jose State University)
+          </BioSection>
         </Section>
         <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            I ♥
+          </Heading>
+          <Paragraph>Soccer, Music, Photographing, Guitar </Paragraph>
+        </Section>
+        <Section delay={0.5}>
           <Heading as="h3" variant="section-title">
             On Web
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/VINCENGUYEN-JS" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoGithub />}
-                >
-                  @vincenguyen
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
               <Link
-                href="https://www.youtube.com/channel/UCzA_0Qzz-0E-plipIsF3Jew"
+                href="https://www.instagram.com/trivnguyen/"
                 target="_blank"
               >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<IoLogoYoutube />}
+                  leftIcon={<IoLogoInstagram />}
                 >
-                  @vincenguyen
+                  @tringuyen
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link
-                href="https://www.linkedin.com/in/vinh-nguyen-quang-44683a1b2/"
+                href="https://www.linkedin.com/in/tri-nguyen-257b97194"
                 target="_blank"
               >
                 <Button
@@ -144,20 +149,11 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoLinkedin />}
                 >
-                  @vincenguyen
+                  @tringuyen
                 </Button>
               </Link>
             </ListItem>
           </List>
-          <SimpleGrid column={[1, 2, 2]} gap={6}>
-            <GridItem
-              href="https://www.youtube.com/watch?v=YtslW2rObDo&t=582s"
-              title="Business trip to Prague"
-              thumbnail={thumbYoutube}
-            >
-              My Youtube Channel
-            </GridItem>
-          </SimpleGrid>
         </Section>
       </Container>
     </Layout>

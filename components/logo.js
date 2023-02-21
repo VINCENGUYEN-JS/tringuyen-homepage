@@ -30,7 +30,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Vince Nguyen
+          Tri Nguyen
         </Text>
       </LogoBox>
     </Link>
